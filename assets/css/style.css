@@ -1,6 +1,410 @@
+/* *********************** Common style starts *************************** */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-img {
+    background-image: url('../images/black-bg-img.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.home__page {
+    background-image: url(../images/home-back.png);
+}
+
+.custom-btn {
+    background: #e9c889;
+    color: #000000;
+    font-family: 'DINPro-Bold', sans-serif;
+    outline: none;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 38%;
+    font-size: 18px;
+    border: none;
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, #e9c889 50%, #ffce70 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+    box-shadow: 2px 4px 30px #daa920;
+}
+
+.custom-btn:hover {
+    background-position: left;
+}
+
+
+/* *********************** Common style ends *************************** */
+
+
+/* ========================== login__page styale starts ====================== */
+
+
+/* .login__page .row {
+    margin: 0%;
+} */
+
+.login__page {
+    background-color: #000000;
+}
+
+.login__page .arc {
+    background: #201b0f;
+    border: 1px solid white;
+    width: 53rem;
+    height: 40rem;
+    border-radius: 50%;
+    margin-top: -260px;
+    margin-left: -26px;
+}
+
+.login__page .logo img {
+    box-shadow: 0px 4px 45px 5px #eac7159e;
+    border-radius: 50%;
+    z-index: 1;
+    width: 180px !important;
+    height: auto;
+}
+
+.login__page .form-control {
+    background: transparent;
+    border: 0;
+    margin-bottom: 20px
+}
+
+.login__page .logo {
+    margin-top: -160px;
+}
+
+.login__page .fantasy-boss {
+    border: 2px solid white;
+    padding: 30px 20px;
+    width: 50%;
+    border-radius: 35px;
+    margin-top: -13px;
+}
+
+.login__page .fantasy-boss .fantasy__boss__img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login__page .fantasy-boss .fantasy__boss__img img {
+    width: 130px;
+}
+
+.login__page .fantasy-boss p {
+    color: white;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.login__page .fantasy-boss span {
+    color: #b3b3b3;
+    line-height: 1.2;
+    color: #fff;
+    display: inline-flex;
+    font-size: 16px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login__page .fantasy-input h4 {
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    /* font-family: 'DINPro-Bold', sans-serif; */
+}
+
+.login__page .arc img {
+    margin-top: 280px;
+    width: 200px;
+    margin-left: 51px;
+}
+
+.login__page .fantasy-input a {
+    color: #05D1FF;
+    /* font-family: 'DINPro-Bold', sans-serif; */
+}
+
+.login__page .fantasy-input input {
+    width: 100%;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #E4CD70;
+    outline: none;
+    padding: 10px;
+    color: white;
+}
+
+.login__page .input-form {
+    width: 60%;
+}
+
+.login__page .input-form label {
+    color: white;
+    font-size: 18px;
+    line-height: 0;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+
+/* verification section */
+
+.login__page .verificaion-input input {
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 17%;
+    margin: 0 6px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login__page .verificaton-detail p {
+    color: white;
+    font-size: 23px;
+    line-height: 30px;
+    margin-top: 20px;
+    font-weight: 500;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.login__page .verification-width {
+    width: 56%;
+    margin-top: 40px;
+}
+
+.login__page .verificaion-input h6 {
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.login__page .code-recive a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+
+/* ========================== login__page styale ends ====================== */
+
+
+/* ****************************** Home Page Style Starts ********************  */
+
+.nav {
+    background: #000000;
+    min-height: 100vh;
+    height: 100%;
+    box-shadow: inset 2px 0px 7px 1px #daa920;
+    border: 1px solid #DAA920;
+}
+
+.fantasy-chose {
+    padding-top: 20px;
+    border: 3px solid white;
+    text-align: center;
+    background-color: #e1c974;
+    border-radius: 30px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 6px 3px #e1c974;
+    width: 80%;
+    margin: -20px auto 0;
+}
+
+.fantasy-chose p {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #000303;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.home-logo img {
+    box-shadow: 0px 6px 90px 22px #e5cc48;
+    border-radius: 50%;
+}
+
+.fantasy__boss__topright__logo {
+    width: 210px;
+}
+
+.col__1__custom__width {
+    width: 6%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: transparent;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #e1c974 !important;
+    text-transform: uppercase;
+    /* font-family: 'DINPro-Bold', sans-serif; */
+    margin: 28px 0px;
+}
+
+.nav-link i {
+    color: white;
+    font-size: 28px;
+    margin: 3px 0px;
+    display: block;
+}
+
+.green-fantasy {
+    background-color: #0d2521;
+}
+
+.merone-fantasy {
+    background: #270e0e;
+}
+
+.fantasy-cards {
+    width: 100%;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-radius: 10px;
+    height: 210px;
+    cursor: pointer;
+}
+
+.home__page .fantasy-cards img {
+    width: 90%;
+}
+
+.home__page .btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -30px;
+}
+
+.home__page .btn-group button {
+    background: #e1c974;
+    min-width: 44%;
+    border-radius: 20px;
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid white;
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, #dfc774 50%, #0d2521 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+
+.home__page .btn-group button:hover {
+    background-position: left;
+    color: white !important;
+}
+
+
+/* ****************************** Home Page Style End ***********************  */
+
+
 /* ============================= Responsiveness starts ========================== */
 
-@media (min-width: 768px) {
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {}
+
+
+/* // Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .arc {
+        width: 34rem;
+        margin-top: -345px;
+        margin-left: -16px;
+        height: 32rem;
+    }
+    .logo {
+        margin-top: -76px;
+    }
+    .fantasy-boss {
+        border: 2px solid white;
+        width: 70%;
+        margin-top: -24px;
+    }
+    .fantasy-boss h5 {
+        margin-top: 2px;
+        font-size: 18px;
+    }
+    .fantasy-boss p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .fantasy-boss span {
+        font-size: 15px;
+    }
+    .verificaton-detail p {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 4px;
+    }
+    .verificaion-input h6 {
+        font-size: 17px;
+    }
+    .code-recive a {
+        font-size: 14px;
+    }
+    .custom-btn {
+        padding: 7px;
+        width: 30%;
+        font-size: 16px;
+    }
+    .custom-btn {
+        padding: 6px;
+        font-size: 15px;
+        min-width: 50%;
+    }
+    .fantasy-input h4 {
+        font-size: 25px;
+    }
+    .input-form label {
+        font-size: 13px;
+    }
+}
+
+
+/* // Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
     .navbar-collapse {
         height: auto;
         border-top: 0;
@@ -36,6 +440,126 @@
     }
     .navbar-collapse .navbar-nav.navbar-right:last-child {
         margin-right: 0;
+    }
+    .arc {
+        width: 26rem;
+        height: 32rem;
+    }
+    .logo {
+        margin-top: -61px;
+    }
+    .fantasy-boss {
+        width: 90%;
+        padding: 3px 10px;
+    }
+    .fantasy-boss h5 {
+        margin-top: 17px;
+        font-size: 17px;
+    }
+    .fantasy-boss p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    .fantasy-boss span {
+        line-height: 12px;
+        font-size: 15px;
+    }
+    .verificaton-detail p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 0px;
+    }
+    .verificaion-input h6 {
+        font-size: 16px;
+    }
+    .code-recive a {
+        font-size: 14px;
+    }
+    .custom-btn {
+        padding: 6px;
+        font-size: 15px;
+        min-width: 50%;
+    }
+    .span-logo {
+        width: 13% !important;
+    }
+    .fantasy-input h4 {
+        font-size: 21px;
+    }
+    .input-form label {
+        line-height: 45px;
+        font-size: 13px;
+    }
+    .fantasy-input input {
+        width: auto;
+    }
+}
+
+
+/* // span devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .arc {
+        width: 38rem;
+        height: 35rem;
+        margin-left: 1px;
+    }
+}
+
+
+/* // Extra span devices (portrait phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .arc {
+        width: 100%;
+        height: 30rem;
+        margin-left: 6px;
+    }
+    .span-logo {
+        width: 13% !important;
+    }
+    .fantasy-boss {
+        border: 3px solid white;
+        padding: 4px 9px;
+        width: 80%;
+        border-radius: 10px;
+        margin-top: -16px;
+    }
+    .logo {
+        margin-top: -55px;
+    }
+    .fantasy-boss h5 {
+        font-size: 16px;
+    }
+    .fantasy-boss p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .fantasy-boss span {
+        font-size: 14px;
+    }
+    .verificaton-detail p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .verificaion-input h6 {
+        font-size: 16px;
+    }
+    .code-recive a {
+        font-size: 14px;
+    }
+    .custom-btn {
+        padding: 6px;
+        min-width: 54%;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+    .fantasy-input h4 {
+        font-size: 20px;
+    }
+    .input-form label {
+        line-height: 40px;
+        font-size: 13px;
     }
 }
 
