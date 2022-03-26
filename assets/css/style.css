@@ -214,14 +214,6 @@
 
 /* ****************************** Home Page Style Starts ********************  */
 
-.nav {
-    background: #000000;
-    min-height: 100vh;
-    height: 100%;
-    box-shadow: inset 2px 0px 7px 1px #daa920;
-    border: 1px solid #DAA920;
-}
-
 .fantasy-chose {
     padding-top: 20px;
     border: 3px solid white;
@@ -255,8 +247,18 @@
     width: 210px;
 }
 
-.col__1__custom__width {
-    width: 6%;
+.col__custom__width {
+    width: 78px;
+}
+
+.left__side__menu .nav {
+    background: #41413e;
+    min-height: 100vh;
+    height: 100%;
+    box-shadow: inset 1px 0px 6px 0px #daa920;
+    /* border: 1px solid #DAA920; */
+    align-items: center;
+    justify-content: space-around;
 }
 
 .nav-pills .nav-link.active,
@@ -265,21 +267,29 @@
     background-color: transparent;
 }
 
-.nav-link {
-    font-size: 14px;
+.left__side__menu .nav-link {
+    font-size: 12px;
+    padding: 10px;
     font-weight: 600;
-    line-height: 21px;
+    line-height: 1.2;
     color: #e1c974 !important;
     text-transform: uppercase;
-    /* font-family: 'DINPro-Bold', sans-serif; */
-    margin: 28px 0px;
+    align-items: center;
+    justify-content: space-around;
+    letter-spacing: -1px;
+    width: 100%;
 }
 
-.nav-link i {
-    color: white;
-    font-size: 28px;
-    margin: 3px 0px;
-    display: block;
+.left__side__menu .nav-link img {
+    width: 24px;
+    margin-bottom: 6px;
+}
+
+.left__side__menu .nav-link:hover,
+.left__side__menu .nav-link.active {
+    background: #dfc774 !important;
+    border-radius: 0 !important;
+    color: #fff !important;
 }
 
 .green-fantasy {
