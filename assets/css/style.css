@@ -658,17 +658,20 @@
     bottom: 25px;
     right: 64px;
 }
-.setting button{
+
+.setting button {
     background-color: #eabe50 !important;
     color: black !important;
     font-size: 30px;
-
 }
 
+
 /* ****************************** Chat Page Style End ***********************  */
+
+
 /* ****************************** League Page Style start ***********************  */
 
-.set_up{
+.set_up {
     border: 1px solid white;
     border: 1px solid white;
     width: 20%;
@@ -678,37 +681,196 @@
     align-items: center;
     margin-top: 20px;
 }
-.draft_result{
+
+.draft_result {
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: 700;
     font-size: 19px;
     color: #00EBFF;
 }
-.week_name{
+
+.week_name {
     text-align: center;
     font-size: 24px;
     text-transform: uppercase;
     font-family: sans-serif;
 }
-.player_detail{
+
+.player_detail {
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 35px;
     background-color: #4c4c4c;
-    width: 44%;
+    width: 47%;
+    height: 130px;
 }
+
 .progress-bar {
     background-color: #eabe50 !important;
 }
-.progress{
-    height: 9px !important;
+
+.pink_bar {
+    background-color: #EA436E !important;
 }
-.player_name ul li{
+
+.rotate_bar {
+    transform: rotate(180deg);
+}
+
+.progress {
+    height: 6px !important;
+}
+
+.player_name ul li {
     list-style: none;
+    font-family: 'DINPro-Bold', sans-serif;
+    line-height: 30px;
 }
-.player_name ul {
-    margin-right: 66px;
+
+.w-70 {
+    width: 70%;
 }
+
+.player_detail h5 {
+    margin-left: 6px;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: 'DINPro-Bold', sans-serif;
+    font-size: 16px;
+}
+
+.player_detail small {
+    margin-left: 6px;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.vs {
+    background-color: #191f2d;
+    padding: 6px 11px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.league_main {
+    height: 500px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.table_bg {
+    background: #e4cc72 !important;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+}
+
+.standing {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.standing_right {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.league_deatails td {
+    text-align: center;
+    font-weight: 600;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.score_points {
+    margin-top: -28px;
+    margin-right: -24px;
+}
+
+.score_number {
+    color: #12d05f;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.team_name {
+    text-transform: capitalize;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.score_points li i {
+    transform: rotate(180deg);
+    font-size: 20px;
+    color: #12d05f;
+}
+
+.league_standing {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #47433a;
+    height: 580px;
+    overflow: auto;
+}
+
+.red-icon {
+    transform: rotate(0deg) !important;
+}
+
+.yellow_text {
+    color: #ead907;
+}
+
+.league_transaction {
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: #112724;
+    height: 580px;
+    overflow: auto;
+}
+
+.transaction {
+    background: #e4cc72;
+    border-radius: 20px;
+    padding: 2px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    font-family: 'DINPro-Bold', sans-serif;
+}
+
+.team_name span {
+    font-size: 8px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color: #AECAD8;
+}
+
+.transaction_team {
+    margin-top: -16px;
+    margin-left: 20px;
+}
+
+.team_price {
+    font-size: 13px;
+    font-weight: 400 !important;
+    font-family: sans-serif !important;
+    color: #AECAD8;
+}
+
+.add_icon i {
+    color: #e4cc72;
+    font-size: 20px;
+}
+
+.league_transaction a {
+    color: #06afbc;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
 /* ****************************** League  Page Style End ***********************  */
 
 
