@@ -872,7 +872,223 @@
 
 
 /* ****************************** League  Page Style End ***********************  */
+/* ****************************** draft setting  Page Style start ***********************  */
 
+:root {
+    --din-pro-light--: 'DINPro-Light', sans-serif;
+}
+
+.setting_side_menu {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.personal_settings {
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: #1f1f1f;
+}
+
+.draft_setting_tabs.active {
+    background: #3b3526 !important;
+    border: 1px solid white !important;
+    border-radius: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.draft_setting_tabs {
+    color: #ffffff;
+    font-family: 'DINPro-Bold', sans-serif;
+    text-align: initial;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.draft_setting_tabs:hover {
+    color: #ede3e3 !important;
+}
+
+.options_select {
+    width: 80%;
+}
+
+.support_icon {
+    display: flex;
+    justify-content: end;
+    color: #796e44;
+    margin-bottom: -8px;
+    margin-right: 5px;
+}
+
+.option_btn_gropu {
+    margin-top: 22px;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked),
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.checkbox-tools:checked+label {
+    background-color: #eabe50;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    color: #000000 !important;
+}
+
+.checkbox-tools:checked+label,
+.checkbox-tools:not(:checked)+label {
+    position: relative;
+    display: inline-block;
+    padding: 6px;
+    width: 29%;
+    border: 1px solid;
+    line-height: 16px;
+    font-size: 14px;
+    font-family: var(--din-pro-light--);
+    font-weight: 500;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: white;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+}
+
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked),
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.options_select_check {
+    width: 90%;
+}
+
+.question_icon {
+    margin-right: 34px;
+    margin-bottom: -14px;
+}
+
+.options_select_draft {
+    width: 50%;
+}
+
+.options_select_support {
+    width: 34%;
+}
+
+.cutom_para {
+    font-family: var(--din-pro-light--);
+    line-height: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkbox+.switchbox {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    height: 27px;
+    overflow: hidden;
+    position: relative;
+    width: 50px;
+}
+
+.checkbox+.switchbox:after {
+    background-color: #f50000;
+    border-radius: 20px;
+    content: ' ';
+    display: block;
+    height: 25px;
+    position: absolute;
+    right: 50%;
+    transition: all 0.1s linear;
+    width: 50%;
+}
+
+.checkbox:checked+.switchbox {
+    background-color: #ffffff;
+}
+
+.checkbox:checked+.switchbox:after {
+    right: 0%;
+}
+
+.options_select_player {
+    width: 70%;
+}
+
+.options_select_reverse {
+    width: 78%;
+}
+.for-checkbox-tools small{
+    font-size: 12px;
+}
+.small_font{
+    font-size: 13px;
+}
+.new_switch::after{
+    background-color: #43BF81 !important;
+}
+.options_select_undrafted{
+    width: 73%;
+}
+.sorting_icon{
+    display: flex;
+    justify-content: center;
+    margin-bottom: -10px;
+    color: #796e44;
+}
+.border_left{
+    border-left: 1px solid #796e44;
+}
+.w-90{
+    width: 90%;
+}
+.randomize{
+    background: #eabe50;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid white;
+    font-family: var(--din-pro-light--);
+}
+.lis_style li{
+    list-style: none;
+    line-height: 30px;
+}
+.reset_draft i{
+    display: flex;
+    justify-content: end;
+    color: #796e44;
+}
+.reset_draft p{
+    color: #796e44;
+    font-weight: 600;
+}
+.refresh{
+    color: #796e44;
+    font-size: 20px;
+}
+/* ****************************** draft setting  Page Style End ***********************  */
 
 /* ============================= Responsiveness starts ========================== */
 
