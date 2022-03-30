@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .bg-img {
     background-image: url('../images/black-bg-img.svg');
     background-size: cover;
@@ -42,6 +47,10 @@
     background-position: left;
 }
 
+h2.card-title {
+    font-size: 2.5rem;
+}
+
 
 /* for scroll bar UI  */
 
@@ -75,6 +84,1058 @@
 
 
 /* *********************** Common style ends *************************** */
+
+
+/* ======================== Home Page Style Starts ========================= */
+
+.top__nav__bar {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid rgba(96, 111, 140, 0.4);
+}
+
+
+/* top__nav__bar */
+
+.top__nav__bar .top__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+
+.mobile-menu-btn {
+    cursor: pointer;
+    display: block;
+}
+
+.top__nav__bar .account-btns {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top__nav__bar .account-btns>* {
+    margin: 0 16px;
+    display: flex;
+}
+
+.top__nav .account-btns .btn-download img {
+    max-height: 44px;
+    width: auto;
+    background: #dfc774;
+}
+
+.top__nav .account-btns .btn {
+    padding: 12px 24px;
+    white-space: nowrap;
+    background-color: rgba(216, 226, 237, 0.1);
+    border: 2px solid #fff;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #fff;
+    transition: .3s linear;
+}
+
+.top__nav .account-btns .btn:hover {
+    background: #dfc774;
+    transition: .3s linear;
+}
+
+.top__nav .btn+.btn {
+    margin-left: 16px;
+}
+
+.top__nav .account-btns .btn-download img:hover {
+    background: #fff;
+}
+
+
+/* main slider starts */
+
+.main__slider__section .custom__container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.main__slider__section .slide {
+    min-width: 10px;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 5px black;
+    opacity: .5;
+}
+
+.main__slider__section .active {
+    flex-grow: 1;
+    transition-duration: 1s;
+    opacity: 1;
+    padding: 0 10px;
+    border-radius: 25px;
+    padding-bottom: 10px
+}
+
+.main__slider__section .nonActive {
+    flex-grow: 0;
+    opacity: .5
+}
+
+.main__slider__section .slide:nth-of-type(1) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1600/900/32/71/oOHv6p.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(2) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/44/49/TVUIau.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(3) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1024/576/30/13/TsJyS3.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(4) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1600/900/55/55/HNXFkf.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(5) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1920/1080/48/13/Pm2qxl.jpg')
+}
+
+.main__slider__section .slide:nth-of-type(6) {
+    background-image: url('https://img.wallpapersafari.com/desktop/1600/900/32/55/CoBfMu.jpg')
+}
+
+@media screen and (max-width: 700px) {
+    .main__slider__section .slide {
+        width: 20px;
+    }
+    .main__slider__section .active {
+        border-radius: 25px
+    }
+}
+
+
+/* main slider ends  */
+
+
+/* games__cards__section starts  */
+
+
+/*Time to apply widths for accordian to work
+Width of image = 640px
+total images = 5
+so width of hovered image = 640px
+width of un-hovered image = 40px - you can set this to anything
+so total container width = 640 + 40*4 = 800px;
+default width = 800/5 = 160px;
+*/
+
+.games__cards__section .accordian {
+    width: 1105px;
+    height: 360px;
+    overflow: hidden;
+    margin: 50px 40px;
+    margin-bottom: 40px;
+    /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35); */
+}
+
+.games__cards__section .accordian li:first-child {
+    box-shadow: none;
+}
+
+
+/*A small hack to prevent flickering on some browsers*/
+
+.games__cards__section .accordian ul {
+    width: 1300px;
+    /*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.games__cards__section .accordian li {
+    position: relative;
+    display: block;
+    width: 220px;
+    float: left;
+    border-left: 1px solid #888;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    /*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+
+/*Reduce with of un-hovered elements*/
+
+.games__cards__section .accordian ul:hover li {
+    width: 110px;
+}
+
+
+/*Lets apply hover effects now*/
+
+
+/*The LI hover style should override the UL hover style*/
+
+.games__cards__section .accordian ul li:hover {
+    width: 640px;
+}
+
+.games__cards__section .accordian li img {
+    display: block;
+}
+
+
+/*Image title styles*/
+
+.games__cards__section .image_title {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 700px;
+}
+
+.games__cards__section .image_title a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+
+/* cards slider 3 section  */
+
+.slide-container {
+    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.wrapper:focus {
+    outline: 0;
+}
+
+.clash-card {
+    background: #dfc774;
+    width: 420px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 19px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px #f7a213;
+    z-index: 9999;
+}
+
+.clash-card__image {
+    position: relative;
+    height: 300px;
+    margin-bottom: 35px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.clash-card__image--barbarian {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--barbarian img {
+    width: 500px;
+    position: absolute;
+    top: -65px;
+    left: -70px;
+}
+
+.clash-card__image--archer {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--archer img {
+    width: 500px;
+    position: absolute;
+    top: -34px;
+    left: -37px;
+}
+
+.clash-card__image--giant {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--giant img {
+    width: 440px;
+    position: absolute;
+    top: -40px;
+    left: -25px;
+}
+
+.clash-card__image--goblin {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--goblin img {
+    width: 470px;
+    position: absolute;
+    top: -31px;
+    left: -37px;
+}
+
+.clash-card__image--wizard {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg");
+    background-size: cover;
+}
+
+.clash-card__image--wizard img {
+    width: 445px;
+    position: absolute;
+    top: -38px;
+    left: -10px;
+}
+
+.clash-card__level {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.clash-card__level--barbarian {
+    color: #EC9B3B;
+}
+
+.clash-card__level--archer {
+    color: #EE5487;
+}
+
+.clash-card__level--giant {
+    color: #F6901A;
+}
+
+.clash-card__level--goblin {
+    color: #82BB30;
+}
+
+.clash-card__level--wizard {
+    color: #4FACFF;
+}
+
+.clash-card__unit-name {
+    font-size: 26px;
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+
+.clash-card__unit-description {
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.clash-card__unit-stats--barbarian {
+    background: #f7a213;
+}
+
+.clash-card__unit-stats--barbarian .one-third {
+    border-right: 1px solid #BD7C2F;
+}
+
+.clash-card__unit-stats--archer {
+    background: #EE5487;
+}
+
+.clash-card__unit-stats--archer .one-third {
+    border-right: 1px solid #D04976;
+}
+
+.clash-card__unit-stats--giant {
+    background: #F6901A;
+}
+
+.clash-card__unit-stats--giant .one-third {
+    border-right: 1px solid #de7b09;
+}
+
+.clash-card__unit-stats--goblin {
+    background: #82BB30;
+}
+
+.clash-card__unit-stats--goblin .one-third {
+    border-right: 1px solid #71a32a;
+}
+
+.clash-card__unit-stats--wizard {
+    background: #4FACFF;
+}
+
+.clash-card__unit-stats--wizard .one-third {
+    border-right: 1px solid #309eff;
+}
+
+.clash-card__unit-stats {
+    color: white;
+    font-weight: 700;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+}
+
+.clash-card__unit-stats .one-third {
+    width: 33%;
+    float: left;
+    padding: 20px 15px;
+}
+
+.clash-card__unit-stats sup {
+    position: absolute;
+    bottom: 4px;
+    font-size: 45%;
+    margin-left: 2px;
+}
+
+.clash-card__unit-stats .stat {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.clash-card__unit-stats .stat-value {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.clash-card__unit-stats .no-border {
+    border-right: none;
+}
+
+.cards__slider3__section .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.cards__slider3__section .slick-prev {
+    left: 150px;
+    z-index: 999;
+}
+
+.cards__slider3__section .slick-next {
+    right: 200px;
+    z-index: 999;
+}
+
+
+/* games_reviews strts  */
+
+.our_games_review {
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+.our_games_review .games_review_div {
+    border-left: 3px solid #3498db;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.09);
+    padding: 30px 30px 30px 30px;
+    margin: 0 10px 0 4px;
+    background: #0f1010;
+    width: 100%;
+}
+
+.our_games_review .games_review_div .pic {
+    width: 180px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.09);
+}
+
+.our_games_review .games_review_div .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.our_games_review .games_review_div .client_info {
+    float: left;
+    margin-right: 20px;
+    width: calc(22% - 1.875rem);
+}
+
+.our_games_review .games_review_div .description {
+    font-size: 13px;
+    color: #918686;
+    padding-top: 10px;
+    line-height: 20px;
+    margin: 0 0 3% 43%;
+}
+
+.our_games_review .games_review_div .title {
+    display: block;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.our_games_review .games_review_div .post {
+    font-size: 12px;
+    display: block;
+}
+
+.our_games_review .owl-theme .owl-controls .owl-buttons .owl-prev,
+.our_games_review .owl-theme .owl-controls .owl-buttons .owl-next {
+    height: 96%;
+    line-height: 155px;
+    position: absolute;
+    right: -40px;
+    top: 0;
+}
+
+.our_games_review .owl-theme .owl-controls .owl-buttons .owl-prev {
+    right: -40px;
+}
+
+.our_games_review .owl-theme .owl-controls .owl-buttons .owl-next {
+    right: -80px;
+}
+
+.our_games_review .owl-theme .owl-controls .owl-buttons div {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #3498db;
+    border-radius: 1px;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    border: 2px solid #d45113;
+    background: #fff;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+    background: #d45113;
+}
+
+@media only screen and (max-width: 992px) {
+    .our_games_review .games_review_div .description {
+        margin: 0 0 3% 44%;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .our_games_review .games_review_div .pic {
+        float: none;
+        width: 100%;
+        height: auto;
+        margin: 0 0 10px;
+    }
+    .our_games_review .games_review_div .client_info {
+        float: none;
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .our_games_review .owl-theme .owl-controls .owl-buttons .owl-prev,
+    .our_games_review .owl-theme .owl-controls .owl-buttons .owl-next {
+        position: inherit;
+        height: 30px;
+        line-height: 30px;
+    }
+    .our_games_review .games_review_div .description {
+        margin: 0;
+    }
+}
+
+
+/* games_reviews ends */
+
+
+/* testimonial_slider  starts  */
+
+.testimonial {
+    border-right: 4px solid #dfc774;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px 30px 130px;
+    margin: 0 15px 30px 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial:before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: -17px;
+    border-top: 25px solid #dfc774;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(45deg);
+}
+
+.testimonial:after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -17px;
+    border-top: 25px solid #dfc774;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    transform: rotate(135deg);
+}
+
+.testimonial .pic {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+}
+
+.testimonial .pic img {
+    width: 100%;
+    height: auto;
+}
+
+.testimonial .description {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #adadad;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.testimonial .title {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #dfc774;
+    margin: 0;
+}
+
+.testimonial .post {
+    display: inline-block;
+    font-size: 17px;
+    color: #dfc774;
+    font-style: italic;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    border: 2px solid #2A3D7D;
+    background: #fff !important;
+    border-radius: 0 !important;
+    opacity: 1;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls .owl-page:hover span {
+    background: #dfc774 !important;
+    border-color: #dfc774;
+}
+
+@media only screen and (max-width: 767px) {
+    .testimonial {
+        padding: 20px;
+        text-align: center;
+    }
+    .testimonial .pic {
+        display: block;
+        position: static;
+        margin: 0 auto 15px;
+    }
+}
+
+
+/* testimonial_slider ends  */
+
+
+/* cards__design starts  */
+
+.cards__design img {
+    height: 180px;
+    width: 100%;
+}
+
+.cards__design .item {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.cards__design .item-card {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #41413e;
+    background-clip: border-box;
+    border: 1px solid rgb(114 98 52);
+    margin-bottom: 30px;
+}
+
+.cards__design .item-card-title {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.cards__design .item-card-title i {
+    font-size: 15px;
+    transition: 1s;
+    cursor: pointer;
+    color: #ffa710
+}
+
+.cards__design .card-title i:hover {
+    transform: scale(1.25) rotate(100deg);
+    color: #18d4ca;
+}
+
+.cards__design .card:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cards__design .card-text {
+    height: 80px;
+}
+
+.cards__design .card::before,
+.cards__design .card::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: scale3d(0, 0, 1);
+    transition: transform .3s ease-out 0s;
+    background: rgba(255, 255, 255, 0.1);
+    content: '';
+    pointer-game_card: none;
+}
+
+.cards__design .card::before {
+    transform-origin: left top;
+}
+
+.cards__design .card::after {
+    transform-origin: right bottom;
+}
+
+.cards__design .card:hover::before,
+.cards__design .card:hover::after,
+.cards__design .card:focus::before,
+.cards__design .card:focus::after {
+    transform: scale3d(1, 1, 1);
+}
+
+
+/* cards__design ends */
+
+
+/* cards__slider2 starts  */
+
+#cards__slider2 {
+    margin-top: 80px;
+}
+
+.post-slide {
+    background: #fff;
+    margin: 20px 15px 20px;
+    border-radius: 15px;
+    padding-top: 1px;
+    /* box-shadow: 0px 14px 22px -9px #bbcbd8; */
+}
+
+.post-slide .post-img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 6px 8px 8px 8px;
+}
+
+.post-slide .post-img img {
+    width: 340px;
+    height: auto;
+    transform: scale(1, 1);
+    transition: transform 0.2s linear;
+}
+
+.post-slide:hover .post-img img {
+    transform: scale(1.1, 1.1);
+}
+
+.post-slide .over-layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: linear-gradient(-45deg, rgba(6, 190, 244, 0.75) 0%, rgba(45, 112, 253, 0.6) 100%);
+    transition: all 0.50s linear;
+}
+
+.post-slide:hover .over-layer {
+    opacity: 1;
+    text-decoration: none;
+}
+
+.post-slide .over-layer i {
+    position: relative;
+    top: 45%;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 25px;
+}
+
+.post-slide .post-content {
+    background: #fff;
+    padding: 2px 20px 40px;
+    border-radius: 15px;
+}
+
+.post-slide .post-title a {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.post-slide .post-title a:hover {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.post-slide .post-description {
+    line-height: 24px;
+    color: #808080;
+    margin-bottom: 25px;
+}
+
+.post-slide .post-date {
+    color: #a9a9a9;
+    font-size: 14px;
+}
+
+.post-slide .post-date i {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #CFDACE;
+}
+
+.post-slide .read-more {
+    padding: 7px 20px;
+    float: right;
+    font-size: 12px;
+    background: #2196F3;
+    color: #ffffff;
+    box-shadow: 0px 10px 20px -10px #1376c5;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+
+.post-slide .read-more:hover {
+    background: #3498db;
+    text-decoration: none;
+    color: #fff;
+}
+
+#cards__slider2 .owl-controls .owl-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cards__slider2 .owl-controls .owl-buttons .owl-prev {
+    background: #fff;
+    position: absolute;
+    top: -13%;
+    left: 15px;
+    padding: 0 18px 0 15px;
+    border-radius: 50px;
+    box-shadow: 3px 14px 25px -10px #92b4d0;
+    transition: background 0.5s ease 0s;
+}
+
+#cards__slider2 .owl-controls .owl-buttons .owl-next {
+    background: #fff;
+    position: absolute;
+    top: -13%;
+    right: 15px;
+    padding: 0 15px 0 18px;
+    border-radius: 50px;
+    box-shadow: -3px 14px 25px -10px #92b4d0;
+    transition: background 0.5s ease 0s;
+}
+
+#cards__slider2 .owl-controls .owl-buttons .owl-prev:after,
+#cards__slider2 .owl-controls .owl-buttons .owl-next:after {
+    content: "\f104";
+    font-family: FontAwesome;
+    color: #333;
+    font-size: 30px;
+}
+
+#cards__slider2 .owl-controls .owl-buttons .owl-next:after {
+    content: "\f105";
+}
+
+@media only screen and (max-width:1280px) {
+    .post-slide .post-content {
+        padding: 0px 15px 25px 15px;
+    }
+}
+
+
+/* cards__slider2 ends  */
+
+
+/* games__cards2 starts  */
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.color-black {
+    color: #1e1e1e;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.card-text:last-child {
+    margin-bottom: 0;
+}
+
+.card-text .row {
+    margin-bottom: 25px;
+}
+
+.game_card_tabs .game_cards {
+    -webkit-box-shadow: 0 16px 64px -16px rgb(46 55 77 / 10%);
+    box-shadow: 0 16px 64px -16px rgb(46 55 77 / 10%);
+    background-color: #fff;
+    -webkit-transition: background-color .24s cubic-bezier(.4, 0, .3, 1), -webkit-box-shadow .24s cubic-bezier(.4, 0, .3, 1);
+    transition: box-shadow .24s cubic-bezier(.4, 0, .3, 1), background-color .24s cubic-bezier(.4, 0, .3, 1), -webkit-box-shadow .24s cubic-bezier(.4, 0, .3, 1);
+    margin-bottom: 20px;
+    transition: .3s linear;
+}
+
+.game_card_tabs .game_cards:hover {
+    background: #dfc774;
+    transform: scale(1.03);
+    overflow: hidden;
+    transition: .3s linear;
+}
+
+.game_card_tabs a {
+    color: #1e1e1e;
+}
+
+.game_card_detail {
+    padding: 0 13px 46px;
+    max-height: 150px;
+    min-height: 130px;
+}
+
+.game_card_icons {
+    text-align: right;
+    position: relative;
+    top: -22px;
+    margin-bottom: -20px;
+}
+
+.game_card_detail .game_card_icons a,
+.game_card_detail-icons a {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .4s cubic-bezier(.4, 0, .3, 1);
+    transition: all .4s cubic-bezier(.4, 0, .3, 1);
+    border: 1px solid #eeedf2;
+    background: #fff;
+    margin-left: 10px;
+}
+
+.game_card_detail .game_card_icons a:hover,
+.game_card_detail-icons a:hover {
+    background: #dfc774;
+    color: #fff;
+    border-color: #dfc774;
+    box-shadow: 0 0 18px #0e0e0e;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1.5em;
+}
+
+.game_card-title h5 {
+    font-size: 1.125rem;
+}
+
+h5.title {
+    line-height: 1.5;
+}
+
+.opacity-6 {
+    opacity: .6;
+}
+
+
+/* games__cards2 ends  */
+
+
+/* ======================== Home Page Style Ends ========================= */
 
 
 /* ========================== login__page styale starts ====================== */
@@ -295,14 +1356,18 @@
     width: 78px;
 }
 
-.left__side__menu .nav {
+.left__side__menu .nav__div {
     background: #41413e;
     min-height: 100vh;
     height: 100%;
     box-shadow: inset 1px 0px 6px 0px #daa920;
+}
+
+.left__side__menu .nav {
     /* border: 1px solid #DAA920; */
     align-items: center;
     justify-content: space-around;
+    min-height: 100vh;
 }
 
 .nav-pills .nav-link.active,
