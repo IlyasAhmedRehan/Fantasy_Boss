@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- Latest Bootstrap 5.1.3  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- din pro font -->
+    <link href="http://fonts.cdnfonts.com/css/dinpro-bold" rel="stylesheet">
+    <!-- fontawesome 5 cdn  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link href="http://fonts.cdnfonts.com/css/dinpro-light" rel="stylesheet">
+    <!-- animation css cdn  -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+    <!-- custom style  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- fav icon  -->
+    <!--[if IE]>
+      <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <title>Fantasy Boss</title>
+</head>
+
+<body>
+    <main>
+        <div class="home__page bg-img">
+            <div class="home__page__content">
+                <div class="d-flex">
+                    <div class="col__custom__width">
+                        <div class="left__side__menu">
+                            <!-- tabs start -->
+                            <div class="d-flex align-items-start">
+                                <div class="nav flex-column nav-pills me-3">
+                                    <button class="nav-link active mt-2">
+                                        <img src="assets/images/left_side_menu_icons/home_icon.svg" alt="Home Icon">
+                                        Home</button>
+                                    <button class="nav-link"> <img
+                                            src="assets/images/left_side_menu_icons/plus_circle_icon.svg"
+                                            alt="New League Icon"> new league</button>
+                                    <button class="nav-link"><img
+                                            src="assets/images/left_side_menu_icons/draftboard_white_icon.svg"
+                                            alt="Mock Draft Icon"> mock drafts</button>
+                                    <button class="nav-link"><img
+                                            src="assets/images/left_side_menu_icons/Logout_icon.svg" alt="Log Out Icon">
+                                        sign out</button>
+                                </div>
+                                <!-- nav pills  -->
+                            </div>
+                        </div>
+                        <!-- left__side__menu -->
+                    </div>
+                    <!-- col-sm-1 -->
+                    <div class="w-100">
+                        <!-- header -->
+                        <div class="left__side__logo">
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+                                <div class="container-fluid px-0 ">
+                                    <img src="assets/images/circle-logo.png" alt="Circle Logo">
+                                    <!-- side logo -->
+                                    <div class="pe-4">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        </ul>
+                                        <form class="d-flex">
+                                            <img src="assets/images/logo-w.png" alt="logo"
+                                                class="img-fluid fantasy__boss__topright__logo">
+                                        </form>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- left__side__logo -->
+                        <div class="tab-content">
+                            <!-- tabs -->
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-md-8">
+                                        <ul class="nav nav-pills mb-3 border-bottom-yellow" id="pills-tab"
+                                            role="tablist">
+                                            <li class="nav-item chat-nav" role="presentation">
+                                                <button class="nav-link chat-tabs active" id="pills-draft-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-draft" type="button"
+                                                    role="tab" aria-controls="pills-draft"
+                                                    aria-selected="true">draft</button>
+                                            </li>
+                                            <li class="nav-item chat-nav" role="presentation">
+                                                <button class="nav-link chat-tabs" id="pills-TRANSACTIONS-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-TRANSACTIONS"
+                                                    type="button" role="tab" aria-controls="pills-TRANSACTIONS"
+                                                    aria-selected="false">LEAGUE & TRANSACTIONS</button>
+                                            </li>
+                                            <li class="nav-item chat-nav" role="presentation">
+                                                <button class="nav-link chat-tabs" id="pills-TEAM-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-TEAM" type="button"
+                                                    role="tab" aria-controls="pills-TEAM" aria-selected="false">MY
+                                                    TEAM</button>
+                                            </li>
+                                            <!-- -- -->
+                                            <li class="nav-item chat-nav" role="presentation">
+                                                <button class="nav-link chat-tabs" id="pills-PLAYERS-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-PLAYERS" type="button"
+                                                    role="tab" aria-controls="pills-PLAYERS"
+                                                    aria-selected="false">PLAYERS & WATCHLIST</button>
+                                            </li>
+                                            <li class="nav-item chat-nav" role="presentation">
+                                                <button class="nav-link chat-tabs" id="pills-ZONE-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-ZONE" type="button"
+                                                    role="tab" aria-controls="pills-ZONE" aria-selected="false">TRADE
+                                                    ZONE</button>
+                                            </li>
+                                            <li class="nav-item chat-nav" role="presentation">
+                                                <button class="nav-link chat-tabs" id="pills-SCORES-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-SCORES" type="button"
+                                                    role="tab" aria-controls="pills-SCORES" aria-selected="false">SCORES
+                                                    & NEWS</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <!-- draft tabs detail start -->
+
+                                            <div class="tab-pane text-light fade" id="pills-TRANSACTIONS"
+                                                role="tabpanel" aria-labelledby="pills-TRANSACTIONS-tab">..333.</div>
+                                            <!-- my team tabs detail start -->
+                                            <div class="tab-pane fade text-light" id="pills-TEAM" role="tabpanel"
+                                                aria-labelledby="pills-TEAM-tab">
+                                                <div class="row">
+                                                    <!-- starter col -->
+                                                    <div class="col-md-6 border_right">
+                                                        <div class="personal_image text-center">
+                                                            <button class="avatar_manage">Waivers (3)</button>
+                                                        </div>
+                                                        <h6 class="starter text-capitalize mt-4 text-center">starter
+                                                        </h6>
+                                                        <div class="d-flex justify-content-center align-items-center">
+                                                            <div class="Q_w">
+                                                                <p>qw</p>
+                                                            </div>
+                                                            <div class="starter_main p-3">
+                                                                <div class="d-flex justify-content-around">
+                                                                    <div class="starter_image">
+                                                                        <img src="assets/images/plyer-personl (2).png"
+                                                                            alt="player" class="img-fluid">
+                                                                    </div>
+                                                                    <div class="starter_para">
+                                                                        <h6>D. Henry</h6>
+                                                                        <p>156 Pts <br>Ranked 7th</p>
+                                                                    </div>
+                                                                    <div class="starter_para">
+                                                                        <p>BUF <br> Sun 10PM vs CIN </p>
+                                                                    </div>
+                                                                    <div class="starter_para text-end">
+                                                                        <span> - <br>24.52</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- --greeen RBS--- -->
+                                                        <div class="d-flex justify-content-center align-items-center flex-wrap">
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center mt-3 w-100">
+                                                                <div class="Q_w green_qw">
+                                                                    <p>RBs</p>
+                                                                </div>
+                                                                <div class="starter_main p-3 gren_bg">
+                                                                    <div class="d-flex justify-content-around">
+                                                                        <div class="starter_image">
+                                                                            <img src="assets/images/plyer-personl (2).png"
+                                                                                alt="player" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="starter_para">
+                                                                            <h6>D. Henry</h6>
+                                                                            <p>156 Pts <br>Ranked 7th</p>
+                                                                        </div>
+                                                                        <div class="starter_para">
+                                                                            <p>BUF <br> Sun 10PM vs CIN </p>
+                                                                        </div>
+                                                                        <div class="starter_para text-end">
+                                                                            <span> - <br>24.52</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center margin_top_20 w-100">
+                                                                <div class="col-md-1"></div>
+                                                                <div class="starter_main p-3 gren_bg">
+                                                                    <div class="d-flex justify-content-around">
+                                                                        <div class="starter_image">
+                                                                            <img src="assets/images/plyer-personl (2).png"
+                                                                                alt="player" class="img-fluid">
+                                                                        </div>
+                                                                        <div class="starter_para">
+                                                                            <h6>D. Henry</h6>
+                                                                            <p>156 Pts <br>Ranked 7th</p>
+                                                                        </div>
+                                                                        <div class="starter_para">
+                                                                            <p>BUF <br> Sun 10PM vs CIN </p>
+                                                                        </div>
+                                                                        <div class="starter_para text-end">
+                                                                            <span> - <br>24.52</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                  
+                                                  <!-- red rdms -->
+                                                  <div class="d-flex justify-content-center align-items-center flex-wrap">
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center mt-3 w-100">
+                                                        <div class="Q_w green_qw bg-danger">
+                                                            <p>WRs</p>
+                                                        </div>
+                                                        <div class="starter_main p-3 wrs_bg">
+                                                            <div class="d-flex justify-content-around">
+                                                                <div class="starter_image">
+                                                                    <img src="assets/images/plyer-personl (2).png"
+                                                                        alt="player" class="img-fluid">
+                                                                </div>
+                                                                <div class="starter_para">
+                                                                    <h6>D. Henry</h6>
+                                                                    <p>156 Pts <br>Ranked 7th</p>
+                                                                </div>
+                                                                <div class="starter_para">
+                                                                    <p>BUF <br> Sun 10PM vs CIN </p>
+                                                                </div>
+                                                                <div class="starter_para text-end">
+                                                                    <span> - <br>24.52</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center margin_top_20 w-100">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="starter_main p-3 wrs_bg">
+                                                            <div class="d-flex justify-content-around">
+                                                                <div class="starter_image">
+                                                                    <img src="assets/images/plyer-personl (2).png"
+                                                                        alt="player" class="img-fluid">
+                                                                </div>
+                                                                <div class="starter_para">
+                                                                    <h6>D. Henry</h6>
+                                                                    <p>156 Pts <br>Ranked 7th</p>
+                                                                </div>
+                                                                <div class="starter_para">
+                                                                    <p>BUF <br> Sun 10PM vs CIN </p>
+                                                                </div>
+                                                                <div class="starter_para text-end">
+                                                                    <span> - <br>24.52</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                 <!-- red rdms -->
+                                                 <div class="d-flex justify-content-center align-items-center flex-wrap">
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center mt-3 w-100">
+                                                        <div class="Q_w green_qw bg-danger">
+                                                           <p>TE</p>
+                                                        </div>
+                                                     
+                                                        <div class="starter_main p-3">
+                                                            <div class="d-flex justify-content-around">
+                                                                <div class="starter_image">
+                                                                    <img src="assets/images/plyer-personl (2).png"
+                                                                        alt="player" class="img-fluid">
+                                                                </div>
+                                                                <div class="starter_para">
+                                                                    <h6>D. Henry</h6>
+                                                                    <p>156 Pts <br>Ranked 7th</p>
+                                                                </div>
+                                                                <div class="starter_para">
+                                                                    <p>BUF <br> Sun 10PM vs CIN </p>
+                                                                </div>
+                                                                <div class="starter_para text-end">
+                                                                    <span> - <br>24.52</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="d-flex justify-content-center align-items-center margin_top_20 w-100">
+                                                        <div class="col-md-1"></div>
+                                                        <div class="starter_main p-3">
+                                                            <div class="d-flex justify-content-around">
+                                                                <div class="starter_image">
+                                                                    <img src="assets/images/plyer-personl (2).png"
+                                                                        alt="player" class="img-fluid">
+                                                                </div>
+                                                                <div class="starter_para">
+                                                                    <h6>D. Henry</h6>
+                                                                    <p>156 Pts <br>Ranked 7th</p>
+                                                                </div>
+                                                                <div class="starter_para">
+                                                                    <p>BUF <br> Sun 10PM vs CIN </p>
+                                                                </div>
+                                                                <div class="starter_para text-end">
+                                                                    <span> - <br>24.52</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                    <!-- bench col -->
+                                                    <div class="col-md-6">
+                                                        <div class="personal_image text-center">
+                                                            <button class="avatar_manage">Wk. 7</button>
+                                                        </div>
+                                                        <h6 class="starter text-capitalize mt-4 text-center">Bench</h6>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane text-light fade" id="pills-PLAYERS" role="tabpanel"
+                                                aria-labelledby="pills-PLAYERS-tab">.5..</div>
+                                            <div class="tab-pane text-light fade" id="pills-ZONE" role="tabpanel"
+                                                aria-labelledby="pills-ZONE-tab">.6.</div>
+                                            <div class="tab-pane fade text-light" id="pills-SCORES" role="tabpanel"
+                                                aria-labelledby="pills-SCORES-tab">.7.</div>
+                                        </div>
+                                    </div>
+                                    <!-- chat section start -->
+                                    <div class="col-md-4">
+                                        <!-- <div class="setting">
+                                    <i class="fa fa-cog " aria-hidden="true"></i>
+                                </div> -->
+                                        <ul class="nav nav-pills mb-3 border-bottom-yellow" id="pills-tab"
+                                            role="tablist">
+                                            <li class="chat-nav-new setting">
+                                                <button class="chat-tabs"> <i class="fa fa-cog "
+                                                        aria-hidden="true"></i></button>
+                                            </li>
+                                            <li class="nav-item chat-nav-new" role="presentation">
+                                                <button class="nav-link chat-tabs active" id="pills-chat-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-chat" type="button"
+                                                    role="tab" aria-controls="pills-chat"
+                                                    aria-selected="true">chat</button>
+                                            </li>
+                                            <li class="nav-item chat-nav-new" role="presentation">
+                                                <button class="nav-link chat-tabs" id="pills-BETS-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-BETS" type="button"
+                                                    role="tab" aria-controls="pills-BETS" aria-selected="false">SIDE
+                                                    BETS</button>
+                                            </li>
+                                            <li class="nav-item chat-nav-new" role="presentation">
+                                                <button class="nav-link chat-tabs" id="pills-BOSS-tab"
+                                                    data-bs-toggle="pill" data-bs-target="#pills-BOSS" type="button"
+                                                    role="tab" aria-controls="pills-BOSS" aria-selected="false">BEAT the
+                                                    BOSS
+                                                    WIN CRYPTO</button>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <!-- chat tabs start -->
+                                            <div class="tab-pane text-light fade show active" id="pills-chat"
+                                                role="tabpanel" aria-labelledby="pills-chat-tab">
+                                                <div class="maim-chat-body p-3">
+                                                    <p>Welcome to your league chat!</p>
+                                                    <div class="chat-input p-3">
+                                                        <i class="fa fa-plus-circle circle" aria-hidden="true"></i>
+                                                        <span class="gif">gif</span>
+                                                        <input type="text" placeholder="enter message" name="" id=""><i
+                                                            class="fa fa-smile smile" aria-hidden="true"></i>
+                                                        <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row  -->
+            </div>
+            <!-- home__page__content -->
+        </div>
+        <!-- home__page -->
+    </main>
+    <!-- main ends  -->
+    <!-- latest jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Latest Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- animation js cdn  -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+        // AOS.init({
+        //    offset: 200,
+        //    duration: 600,
+        //    easing: 'ease-in-sine',
+        //    delay: 100,
+        //  });
+    </script>
+</body>
+
+</html>

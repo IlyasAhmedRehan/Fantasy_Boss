@@ -450,7 +450,7 @@
     color: white !important;
     font-family: 'DINPro-Bold', sans-serif;
     height: 60px;
-    font-size: 15px;
+    font-size: 12px;
     border-radius: 20px !important;
     border: 1px solid white !important;
     text-transform: uppercase;
@@ -1089,7 +1089,196 @@
     font-size: 20px;
 }
 /* ****************************** draft setting  Page Style End ***********************  */
+/* personal setting page start */
 
+.setting_shadow {
+    box-shadow: inset 0px 19px 27px -13px #eabe50;
+    background-color: #1f1f1f;
+}
+
+.personal_image button {
+    background: #eabe50;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    font-size: 19px;
+    width: 73%;
+    line-height: 18px;
+    font-family: var(--din-pro-light--);
+    font-weight: 600;
+}
+
+.name_personl {
+    font-size: 24px;
+    font-family: var(--din-pro-light--);
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+.personal_info_input label {
+    font-size: 16px;
+    font-weight: var(--din-pro-light--);
+    text-transform: capitalize;
+    text-align: end;
+    width: 100%;
+    font-weight: 600;
+}
+
+.personal_info_input input {
+    background-image: linear-gradient(45deg, #343434db, #000000eb);
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 20px;
+    width: 60%;
+    outline: none;
+}
+
+.personal_info_input input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.notification_text {
+    font-size: 16px;
+    text-align: end;
+    font-weight: 600;
+    font-family: var(--din-pro-light--);
+}
+
+.button_input {
+    background: #eabe50 !important;
+}
+
+.button_input::placeholder {
+    color: black !important;
+    font-weight: 700;
+}
+
+.team_label label {
+    width: 100% !important;
+}
+
+.border_top {
+    border: 1px solid #eabe50;
+    width: 50%;
+    height: 2px;
+}
+
+
+/* personal page style end */
+
+
+/* commission tool start */
+
+.commission_tools_box {
+    border: 1px solid white;
+    border-radius: 12px;
+    background: #413c2d;
+    height: 150px;
+}
+
+.commission_tools_box h4 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.commission_tools_box p {
+    text-align: center;
+    line-height: 15px;
+    margin-top: 35px;
+}
+
+
+/* commission tool end */
+
+
+/* ****************************** my team Page Style start ***********************  */
+
+
+/* ****************************** my team  setting  Page Style End ***********************  */
+
+:root {
+    --dinpro-bold---: 'DINPro-Bold', sans-serif;
+}
+
+.avatar_manage {
+    width: 43% !important;
+    height: 45px;
+    box-shadow: 0px 3px 3px 1px #8b3f54;
+}
+
+.border_right {
+    border-right: 1px solid white;
+}
+
+.starter {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: var(--din-pro-light--);
+}
+
+.Q_w {
+    background-color: #004B8B;
+    border: 1px solid #707070;
+    border-radius: 13px;
+    font-family: var(--dinpro-bold---);
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin-right: -17px;
+    z-index: 9999;
+}
+
+.Q_w p {
+    font-size: var(--din-pro-light--);
+}
+.wrs_bg{
+    background-image: linear-gradient(45deg, #25090987, transparent) !important;
+}
+.gren_bg{
+    background-image: linear-gradient(45deg, #009d8757, transparent) !important;
+}
+
+.green_qw{
+    background: #009d87;
+    margin-top: 59px;
+}
+.margin_top_20{
+    margin-top: -20px;
+}
+.starter_main {
+    background-image: linear-gradient(88deg, #0a1721, transparent);
+    border-radius: 20px;
+    border: 1px solid #707070;
+    width: 100%;
+    height: 69px;
+}
+
+.starter_para p {
+    font-size: 13px Im !important;
+    line-height: 17px;
+    font-size: var(--din-pro-light--);
+}
+
+.starter_para h6 {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 7px;
+    font-size: var(--din-pro-light--);
+}
+
+.starter_para span {
+    font-size: 13px !important;
+    font-size: var(--din-pro-light--);
+}
+.commision_tool_height{
+    height: 100vh;
+}
 /* ============================= Responsiveness starts ========================== */
 
 
