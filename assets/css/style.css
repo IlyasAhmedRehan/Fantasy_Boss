@@ -1357,17 +1357,20 @@ h5.title {
 }
 
 .left__side__menu .nav__div {
+    background: #41413e !important;
+    min-height: 100vh;
+    height: 100%;
+    box-shadow: inset 1px 0px 6px 0px #daa920 !important;
+}
+
+.left__side__menu .nav {
     background: #41413e;
     min-height: 100vh;
     height: 100%;
     box-shadow: inset 1px 0px 6px 0px #daa920;
-}
-
-.left__side__menu .nav {
     /* border: 1px solid #DAA920; */
     align-items: center;
     justify-content: space-around;
-    min-height: 100vh;
 }
 
 .nav-pills .nav-link.active,
@@ -1400,7 +1403,13 @@ h5.title {
     border-radius: 0 !important;
     color: #fff !important;
 }
-
+.left__side__menu{
+    POSITION: sticky;
+    LEFT: 0;
+    RIGHT: 0;
+    BOTTOM: 0;
+    TOP: 0;
+}
 .green-fantasy {
     background-color: #0d2521;
 }
@@ -2344,6 +2353,245 @@ h5.title {
 .commision_tool_height{
     height: 100vh;
 }
+
+
+/* ****************************** my team Page Style start ***********************  */
+
+:root {
+    --dinpro-bold---: 'DINPro-Bold', sans-serif;
+    ---font-poopin--: 'Poppins', sans-serif;
+}
+
+.avatar_manage {
+    width: 43% !important;
+    height: 45px;
+    box-shadow: 0px 3px 3px 1px #8b3f54;
+}
+
+.border_right {
+    border-right: 1px solid white;
+}
+
+.starter {
+    font-size: 21px;
+    font-weight: 500;
+    font-family: var(--din-pro-light--);
+}
+
+.Q_w {
+    background-color: #004B8B;
+    border: 1px solid #707070;
+    border-radius: 13px;
+    font-family: var(--dinpro-bold---);
+    width: 15%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    margin-right: -17px;
+    z-index: 999;
+}
+
+.starter_main {
+    background-image: linear-gradient(88deg, #0a1721, transparent);
+    border-radius: 20px;
+    border: 1px solid #707070;
+    width: 100%;
+    height: 69px;
+}
+
+.starter_para p {
+    font-size: 12px !important;
+    line-height: 17px;
+    font-size: var(--din-pro-light--);
+}
+
+.starter_para h6 {
+    font-size: 13px !important;
+    font-weight: 700;
+    line-height: 3px;
+    font-size: var(--din-pro-light--);
+}
+
+.starter_para span {
+    font-size: 13px !important;
+    font-size: var(--din-pro-light--);
+}
+
+.green_qw {
+    background-color: #009d87;
+    margin-top: 63px;
+}
+
+.margin_top_20 {
+    margin-top: -17px;
+}
+
+.green-bg {
+    background-image: linear-gradient(45deg, #092420, transparent);
+}
+
+.red_bg {
+    background: red;
+}
+
+.light_red_bg {
+    background-image: linear-gradient(45deg, #230606, transparent);
+}
+
+.t_e {
+    width: 100%;
+    text-align: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a58502;
+}
+
+.F_lx {
+    width: 100%;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #078875;
+}
+
+.two_TE {
+    border: 1px solid;
+    border-radius: 12px;
+    margin-top: 54px;
+    z-index: 99;
+    border: 1px solid;
+    border-radius: 12px;
+    margin-top: 54px;
+    height: 100px;
+    padding: 0px;
+    background: none !important;
+}
+
+.margin_top_30 {
+    margin-top: -41px;
+}
+
+.light_yellow_bg {
+    background-image: linear-gradient(45deg, #a585025c, transparent);
+}
+
+.light_gren_bg {
+    background-image: linear-gradient(45deg, #0788755e, transparent);
+}
+
+.bg_lite_k {
+    background: #7f847b;
+}
+
+.bg_lite_DEF {
+    background: #795d5b;
+}
+
+.light_gray_bg {
+    background-image: linear-gradient(45deg, #232423, transparent);
+}
+
+.light_pink_bg {
+    background-image: linear-gradient(45deg, #241f1f, transparent);
+}
+
+.bench_qw {
+    margin-left: -15px;
+}
+
+.wavier_modal {
+    min-width: 700px;
+    margin-top: 140px;
+    margin-left: -50px;
+    background-image: linear-gradient(45deg, #312f2f, #141313f2);
+    border: 1px solid white;
+    border-radius: 16px;
+}
+
+.close_icons {
+    font-size: 34px;
+}
+
+.waiver_title {
+    color: white;
+    font-weight: bold;
+    font-family: var(---font-poopin--);
+    font-size: 25px;
+    border-bottom: 2px solid white;
+}
+.wavier_menu_modal{
+ padding: 5px;
+    border-bottom: 1px solid #f5bc4e;
+}
+.wavier_modal_bars{
+    color: white;
+}
+.small_modal{
+    color: white;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 11px;
+    margin-left: 20px;
+    font-family: var(--din-pro-light--);
+}
+.add_player{
+    display: flex;
+    line-height: 1px;
+}
+.bar_icon{
+    font-size: 26px;
+    color: #808080;
+    display: flex;
+    justify-content: center;
+    LEFT: C;
+    ALIGN-ITEMS: CENTER;
+    align-items: center;
+    margin-top: 7px;
+}
+.plus_body{
+    border: 1px solid #5cae70;
+    border-radius: 50%;
+    width: 36px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus_body i{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5cae70;
+}
+.henrey_derick{
+    font-size: 12px;
+    margin-left: 7px;
+    line-height: 26px;
+    font-family: var(--din-pro-light--);
+}
+.minus_body{
+    border: 1px solid red;
+}
+.minus_body i{
+    color: red;
+}
+.red_circle{
+    font-size: 25px;
+}
+/* ****************************** my team  setting  Page Style End ***********************  */
 /* ============================= Responsiveness starts ========================== */
 
 
